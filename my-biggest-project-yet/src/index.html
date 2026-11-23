@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1 style="">Math Parser Project</h1>
@@ -11,7 +12,7 @@
     <input id="cleanSolution" type="checkbox">
     <span class="slider round"></span>
     </label> Raw Answers </div>
-  <label id="lablel">Floating Point Err: <input type="number" id="roundingPoint"></input> (Currently Disabled)</ label>
+  <label id="lablel">Floating Point Err: <input type="number" id="roundingPoint"></input> (Currently Disabled)</label>
   <div id="desc"><p>Implied multiplication (without a *) only works before constants. So between parentheses or functions need a *. Use parentheses to specify the input for functions<br><p class="brk"></p>Answers that are really small may show up as 0 if raw answers is off. Floating Point Err specifies 
 the rounding threshold. Floating Point Err = 9 means that numbers smaller than 10^-9 will be rounded down, and numbers will be rounded after 9 repeating digits (0s and 9s).
     <br><b>NOTE: code that is NOT MINE has comments specifying so. code from elsewhere is only used to made things look nicer / work nicer, and doesn't directly have to do with the main idea of this project, a math parser.</br></b>
