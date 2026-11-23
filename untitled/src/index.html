@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <title>Tetrih</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<button class="button2" id="resetButton"><img id="resetButtonicon" src="https://icons.veryicon.com/png/o/miscellaneous/component-usage/reset-16.png"></button>
+<button class="button2" id="playButton">▶</button>
+<button class="button2" id="nextFrameButton"><img  id="nextFrameButtonImage" src="https://www.svgrepo.com/show/334260/skip-next.svg"></button>
+     <t id="coords">X:? Y:?</t>
+        <form id="form">
+     <p class="spacer"></p>
+    <t>Δt:</t>
+    <input type="number" id="deltaTInput"></input>
+    <br>
+    <a id="speedT">Speed:</a><input min="1" max="3.9815" step="0.0000001" id="updateSpeedInputSlider" onchange="updateSpeedChanged(this)" type="range"></input>
+    <br>
+    <a id="zoomT">Zoom:</a><input min="1" max="3.9815" step="0.0000001" id="updateZoomInputSlider" onchange="updateZoomChanged(this)" type="range"></input>
+  </form>
+  <p class="spacer"></p>
+    <div id="canvasDiv">
+  <canvas id="mainCanvas" width="500px" height="500px"></canvas>
+  </div>
+  </body>
+</html>

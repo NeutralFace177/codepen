@@ -1,0 +1,160 @@
+
+/* toggle switch from w3schools could've left it as a checkbox however this looks nicer*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height 30px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* back to my css*/
+
+#funcButton {
+  position: relative;
+  top: -55px;
+  left: 95px;
+  background-color: white;
+  z-index: 100;
+}
+#cleanSolution {
+  position: relative;
+  left: 15px;
+}
+#info {
+  float: left;
+  position: relative;
+  left: 675px;
+  top: -420px;
+}
+
+#desc {
+  width: 600px;
+}
+
+#input {
+  width: 300px;
+}
+
+#functions {
+  border: inset;
+  background: rgb(200,200,200);
+  position: absolute;
+  width: 150px;
+}
+#ftlt {
+  position: relative;
+  top: -15px;
+}
+#fList {
+  position: relative;
+  bottom: 72.5px;
+  left: 10px;
+}
+#gldnrt {
+  font-size: 70%;
+}
+
+#roundingPoint {
+  width: 60px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#lablel {
+  top: 4px;
+  left: 10px;
+  position: relative;
+}
+
+#operators {
+  position: absolute;
+  left: 180px;
+  background: rgb(200,200,200);
+  size: fit;
+  width: 100px;
+  border: inset;
+}
+#ops {
+  position: relative;
+  top: -30px;
+  left: 10px;
+}
+#prtrs {
+  position: relative;
+  top: -15px;
+}
+#constants {
+  position: absolute;
+  border: inset;
+  width: 128px;
+  left: 310px;
+  background: rgb(200,200,200);
+}
+#cnstnts {
+  position: relative;
+  top: -15px;
+}
+#constantsList {
+  position: relative;
+  top: -30px;
+  left: 10px;
+}
+
+.brk {
+  line-height: 5px;
+  margin: 12px;
+}
+#knownBugs {
+  line-height: 17px;
+}

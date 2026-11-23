@@ -1,0 +1,215 @@
+#widthInput {
+  width: 40px;
+}
+#heightInput {
+  width:40px;
+}
+.checksLogicalDropdown {
+  margin:7px;
+}
+.deleteButtonIcon {
+  object-fit:scale-down;
+  width:8px;
+  position:relative;
+  top:-3px;
+}
+
+.checkDeleteButton:hover,.transitionDeleteButton:hover,.collapseButton:hover,.editButton:hover,.addCheckButton:hover,.checkCollapseButton:hover,.addTransitionButton:hover,.stateDeleteButton:hover,.valueDeleteButton:hover,.addValueButton:hover {
+background-color:rgb(200,200,200);
+  border-color:rgb(230,230,230);
+}
+.checkDeleteButton:active,.transitionDeleteButton:active,.collapseButton:active,.editButton:active,.addCheckButton:active,.checkCollapseButton:active,.addTransitionButton:active,.stateDeleteButton:active,.valueDeleteButton:active,.addValueButton:active {
+  border-color:rgb(100,100,100);
+  background-color:rgb(130,130,130);
+}
+
+.checkDeleteButton,.transitionDeleteButton,.collapseButton,.editButton,.addCheckButton,.checkCollapseButton,.addTransitionButton,.addStateButton,.stateDeleteButton,.valueDeleteButton,.addValueButton {
+  padding:0px;
+  width:16px;
+  height:16px;
+  background-color:rgb(150,150,150);
+  border-style:solid;
+  border-radius:4px;
+  border-color:rgb(200,200,200);
+}
+#rulesetEditor {
+  float: right;
+ 
+  background-color:rgb(200,200,200);
+  display: flex;
+  flex-direction: column;
+}
+[tag="bordered"] {
+   border-width:2px;
+  border-radius:5px;
+  border-style:solid;
+  border-color:rgb(60  ,60,60);
+}
+.addCheckButton,.addTransitionButton,.addStateButton,.addValueButton {
+  margin:7px;
+  margin-top:0px;
+  line-height:13px;
+  text-align:left;
+  font-size:16px;
+  width:20px;
+  height:20px;
+}
+.addStateButton {
+  border-color:rgb(230,230,230);
+    background-color:rgb(170,170,170);
+}
+.addStateButton:hover {
+  background-color:rgb(207,207,207);
+  border-color:rgb(237,237,237);
+}
+.addStateButton:active{
+  border-color:rgb(115,115,115);
+  background-color:rgb(145,145,145);
+}
+.transitionDeleteButton,.checkDeleteButton,.valueDeleteButton {
+float:right;
+  position:relative;
+
+}
+
+.stateDeleteButton {
+  float:right;
+  position:relative;
+  left:5px;
+  bottom:5px;
+}
+
+.valuesCntr {
+  background-color:rgb(150,150,150);
+  position:relative;
+  padding:3px;
+  margin-right:10px;
+  border-radius:10px;
+}
+
+.transitionsCntr {
+
+  background-color:rgb(150,150,150);
+  position:relative;
+  padding:3px;
+  margin-right:10px;
+  border-radius:10px;
+}
+.valueEditor {
+  margin:10px;
+  border-radius:4px;
+  background-color:rgb(170,170,170);
+  padding:5px;
+  padding-left:5px;
+}
+
+[tag="smallBreak"] {
+  margin-top:12px;
+}
+
+.cllpsbttnImg {
+  object-fit:scale-down;
+  width:75%;
+  position:relative;
+  top:-1px;
+}
+
+.transitionEditor {
+  margin:7px;
+  border-radius:4px;
+  background-color:rgb(170,170,170);
+  padding:3px;
+  padding-left:5px;
+}
+
+#tt {
+  font-size: 20px;
+  margin:5px;
+}
+.stateEditor {
+  min-width:400px;
+  margin:10px;
+  text-align:10px;
+  background:blue;
+  padding: 10px;
+  background-color:rgb(170,170,170);
+}
+
+.checksCntr {
+    background-color:rgb(150,150,150);
+  position:relative;
+  padding:3px;
+  margin-right:10px;
+  border-radius:10px;
+}
+
+.checkEditor {
+margin:7px;
+  border-radius:4px;
+  background-color:rgb(170,170,170);
+  padding:3px;
+  padding-left:5px;
+}
+
+.editButton {
+  left:2px;
+ position:relative;
+  padding:0px;
+  width:20px;
+  height:20px;
+}
+.editButtonIMG {
+  object-fit:scale-down;
+  width:12px;
+  position:relative;
+  top:1px;
+  
+}
+
+#mainCanvas{
+  border-radius:0px;
+  border-width:0px;
+  object-fit:contain;
+}
+#resetButtonicon {
+  width: 16px;
+  height: 16px;
+  top: 1px;
+  right:3px;
+  position:relative;
+}
+#canvasDiv {
+  padding:2px;
+  background-color:black;
+  display:inline flex;
+}
+#scaleInput {
+  width:30px;
+}
+
+.button2 {
+  width:25px;
+  height:25px;
+  vertical-align:top;
+}
+
+#nextFrameButtonImage {
+  width:25x;
+  height:25px;
+  top:-2px;
+  right:7px;
+  position:relative;
+}
+.spacer {
+  font-size:5px;
+}
+
+#form {
+  line-height:25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

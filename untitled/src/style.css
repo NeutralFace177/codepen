@@ -1,0 +1,83 @@
+#deltaTInput {
+  width: 40px;
+}
+#heightInput {
+  width:40px;
+}
+
+[tag="bordered"] {
+   border-width:2px;
+  border-radius:5px;
+  border-style:solid;
+  border-color:rgb(60,60,60);
+}
+
+[tag="smallBreak"] {
+  margin-top:12px;
+}
+
+.cllpsbttnImg {
+  object-fit:scale-down;
+  width:75%;
+  position:relative;
+  top:-1px;
+}
+
+#tt {
+  font-size: 20px;
+  margin:5px;
+}
+#mainCanvas{
+  border-radius:0px;
+  border-width:0px;
+  object-fit:contain;
+}
+#resetButtonicon {
+  width: 16px;
+  height: 16px;
+  top: 1px;
+  right:3px;
+  position:relative;
+}
+#canvasDiv {
+  padding:2px;
+  background-color:black;
+  display:inline flex;
+}
+#scaleInput {
+  width:30px;
+}
+
+.button2 {
+  width:25px;
+  height:25px;
+  vertical-align:top;
+}
+
+#nextFrameButtonImage {
+  width:25x;
+  height:25px;
+  top:-2px;
+  right:7px;
+  position:relative;
+}
+.spacer {
+  font-size:5px;
+}
+
+#updateSpeedInputSlider {
+  position:relative;
+  top:5px;
+}
+
+#form {
+  line-height:25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+

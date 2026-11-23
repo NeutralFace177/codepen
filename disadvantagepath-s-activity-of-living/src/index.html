@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <title>Disadvantagepath's Activity Of Living</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="form">
+    <input type="number" id="widthInput"></input>
+  <b>x </b><input type="number" id="heightInput"</input> 
+    <br>Scale: <input type="number" id="scaleInput"></input>
+  <br><a id="speedT">Speed:</a><input min="1" max="3.9815" step="0.0000001" id="updateSpeedInputSlider" onchange="updateSpeedChanged(this)" type="range"></input>
+  </form><p class="spacer"></p>
+<button class="button2" id="resetButton"><img id="resetButtonicon" src="https://icons.veryicon.com/png/o/miscellaneous/component-usage/reset-16.png"></button>
+<button class="button2" id="playButton">▶</button>
+<button class="button2" id="nextFrameButton"><img  id="nextFrameButtonImage" src="https://www.svgrepo.com/show/334260/skip-next.svg"></button>
+<br><t id="coords">X:? Y:?</t>
+<p class="spacer"></p>
+<div id="canvasDiv">
+  <canvas id="mainCanvas"></canvas>
+  </div>
+<div tag="bordered" id="rulesetEditor">
+  <div id="tt"><b>Ruleset Editor</b></div>
+  <div style="margin-left:5px">States:</div>
+
+  <button class="addStateButton" id="stateButton" onclick="addStateClicked(this)"><b>＋
+</b></button>
+</div>
+
+<!-- template shi-->
+  <div hidden="true">
+    <div class="checkEditor" tag="bordered" id="checkEditorTemplate">
+    Neighbors:<input onchange="checkNeighborsChanged(this)" value="[1,0],[-1,0],[0,1],[0,-1],[-1,-1],[-1,1],[1,1],[1,-1]" class="neighborsInpt"style="width:150px;"></input><button class="editButton">
+        <img class="editButtonIMG"src="https://cdn-icons-png.flaticon.com/256/764/764599.png"></button> <button class="checkDeleteButton" onclick="removeCheckClicked(this)">
+      <img class="deleteButtonIcon" src="https://www.svgrepo.com/show/12848/x-symbol.svg">
+    </button>
+      <br>
+      <select class="operation" onchange="checkOperationChanged(this)">
+        <optgroup label="State">
+        <option>Number</option>
+        </optgroup>
+        <optgroup label="Properties">
+        <option>Sum</option>
+        <option>Product</option>
+        <option>Quotient</option>
+      </optgroup>
+      </select>
+    <select class="property" onchange="checkPropertyChanged(this)">
+      
+    </select>
+      <select class="conditional" onchange="checkConditionalChanged(this)">
+        <option>></option>
+        <option>>=</option>
+        <option><</option>
+        <option><=</option>
+          <option>=</option>
+      </select>
+      <input value="0" onchange="checkConditionChanged(this)" class="condition" type="number" style="width:20px;"></input>
+  </div>
+
+
+<div class="transitionEditor" tag="bordered" id="transitionEditorTemplate">Checks:<button class="checkCollapseButton" onclick="minimizeClicked(this)"><img class="cllpsbttnImg" src="https://cdn-icons-png.flaticon.com/512/60/60781.png"></button><button class="transitionDeleteButton"onclick="removeTransitionClicked(this)">
+    <img class="deleteButtonIcon" src="https://www.svgrepo.com/show/12848/x-symbol.svg">
+  </button>
+    <div class="checksCntr" collapsible="true">
+      <div>
+    
+<button class="addCheckButton" onclick="addCheckClicked(this)"><b>＋
+</b></button>
+    </div>
+      </div>
+    <br>Result:<select class="resultSelector" onchange="transitionResultChanged(this)">
+  
+  </select>
+    </div>
+<div id="checksSecondaryLogicalOperatorDropdownTemplate" class="checksLogicalDropdown">
+  <select onchange="transitionCond2Changed(this)">
+    <option>OR</option>
+    <option>AND</option>
+    <option>NOR</option>
+    <option>NAND</option>
+    <option>XOR</option>
+    <option>XNOR</option>
+  </select>
+</div>
+
+<div tag="bordered" class="stateEditor" name="" id="stateEditorTemplate">
+  <b>Name:</b><input class="nameInput" style="width:80px;" onchange="stateNameChanged(this)"></input><button class="stateDeleteButton" onclick="removeStateClicked(this)">
+      <img class="deleteButtonIcon" src="https://www.svgrepo.com/show/12848/x-symbol.svg">
+  </button>
+  <br>
+Color:<input value="#000000" onchange="stateColorChanged(this)" class="colorSelector"type="color"></input><br>Transitions:<button class="collapseButton" onclick="minimizeClicked(this)">
+  <img class="cllpsbttnImg" src="https://cdn-icons-png.flaticon.com/512/60/60781.png">
+  </button>
+  <div class="transitionsCntr" collapsible="true">
+ <div>
+<button class="addTransitionButton" onclick="addTransitionClicked(this)"><b>＋
+</b></button>
+</div>
+    </div>
+<br>
+  Values: <button onclick="minimizeValues(this)"class="collapseButton"><img class="cllpsbttnImg" src="https://cdn-icons-png.flaticon.com/512/60/60781.png"></button>
+  <div class="valuesCntr" collapsable="true">
+    <div>
+    <button class="addValueButton" onclick="addValueClicked(this)"><b>＋
+</b></button>
+    </div>
+  </div>
+  <br>
+</div>
+
+
+<div class="valueEditor" id="valueEditorTemplate" tag="bordered"> 
+      Name:<input type="text" style="width:100px;" class="valueNameInput" onchange="valueNameChanged(this)"></input> 
+    Value:<input onchange="valueValueChanged(this)" type="number" class="valueValueInput" style="width:50px;"></input><button class="valueDeleteButton" onclick="removeValueClicked(this)">
+      <img class="deleteButtonIcon" src="https://www.svgrepo.com/show/12848/x-symbol.svg">
+  </button>
+    </div>
+</div>
+
+
+ <script src="index.js"></script>
+  </body>
+</html>
